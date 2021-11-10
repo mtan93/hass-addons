@@ -1,0 +1,19 @@
+---
+name: Unifi Cam Proxy
+version: 1.0
+slug: unifi-cam-proxy
+description: Testing version of unifi-cam-proxy.
+url: https://github.com/mtan93/hass-addons/unifi-cam-proxy
+init: false
+arch:
+  - aarch64
+  - amd64
+  - armhf
+  - armv7
+  - i386
+options:
+  log_level: info
+  seconds_between_quotes: 5
+schema:
+  log_level: list(trace|debug|info|notice|warning|error|fatal)
+  seconds_between_quotes: int(1,120)
