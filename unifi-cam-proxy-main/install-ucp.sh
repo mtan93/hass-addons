@@ -4,7 +4,9 @@ apt-get update -y
 apt-get -y install netcat
 echo Checking OpenSSL
 openssl version -a
-echo Generating cert
+echo Generating 
+rm -rf /tmp/client.pem
+rm -rf /opt/client.pem
 cd /tmp
 openssl ecparam -out /tmp/private.key -name prime256v1 -genkey -noout
 openssl req -new -sha256 -key /tmp/private.key -out /tmp/server.csr -subj "/C=TW/L=Taipei/O=Ubiquiti Networks Inc./OU=devint/CN=camera.ubnt.dev/emailAddress=support@ubnt.com"
