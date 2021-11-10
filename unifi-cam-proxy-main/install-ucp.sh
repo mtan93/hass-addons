@@ -1,5 +1,5 @@
 echo Install pre-requisites
-apt install -y ffmpeg python3.8 python-pip
+apt install -y ffmpeg python3.8 python-pip screen
 echo Checking OpenSSL
 openssl version -a
 echo Generating cert
