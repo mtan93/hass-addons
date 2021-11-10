@@ -1,5 +1,7 @@
 echo Install pre-requisites
 apt install -y ffmpeg python3.8 python-pip screen
+apt-get update -y
+apt-get -y install netcat
 echo Checking OpenSSL
 openssl version -a
 echo Generating cert
